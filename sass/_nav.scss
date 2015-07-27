@@ -2,14 +2,22 @@
     display: none;
     @include breakpoint($lg) {
         display: block;
+        text-align: right;
+        padding-top: 16px;
     }
     ul {
         display: block;
         width: 100%;
+        font-size: 14px;
         li {
+            a {
+                color: $white;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
             display: inline-block;
             position: relative;
-            padding: 0 35px;
+            padding: 0 10px;
             ul {
                 display: none;
             }

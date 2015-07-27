@@ -1,3 +1,6 @@
+@import "compass/css3/font-face";
+@include font-face("Arvo Bold", font-files("/fonts/Arvo-Bold-webfont.woff", "/fonts/Arvo-Bold-webfont.svg", "/fonts/Arvo-Bold-webfont.ttf"), "/fonts/Arvo-Bold-webfont.eot");
+@include font-face("Open Sans", font-files("/fonts/OpenSans-Regular-webfont.woff", "/fonts/OpenSans-Regular-webfont.svg", "/fonts/OpenSans-Regular-webfont.ttf"), "/fonts/OpenSans-Regular-webfont.eot");
 @font-face {
     font-family: 'icomoon';
     src: url('/fonts/icomoon.eot?wycmvo');

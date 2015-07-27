@@ -1,0 +1,125 @@
+    header {
+        position: absolute;
+        background: $trans-blue;
+        padding: 25px;
+        width: 100%;
+        .logo {
+            display: inline-block;
+            width: 10%;
+            vertical-align: middle;
+        }
+        .right-header {
+            display: inline-block;
+            vertical-align: middle;
+            width: 89%;
+            color: $white;
+        }
+        .info {
+            text-align: right;
+        }
+    }
+    .banner {
+        background-image: url(/banner-img.jpg);
+        background-size: cover;
+        padding: 340px 0 160px;
+        .box {
+            font-size: 54px;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 45px 65px;
+            margin: 0 auto;
+            background: $trans-blue;
+            max-width: 80%;
+            width: 700px;
+            border-radius: 8px;
+            line-height: 1.4;
+        }
+    }
+    .text-area {
+        padding: 70px 0 50px;
+        h1 {
+            color: $blue;
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 32px;
+        }
+        .main-text {
+            color: $text-grey;
+            colums: 2 200px;
+            -webkit-columns: 2 200px;
+            -moz-columns: 2 200px;
+            column-gap: 16px;
+            -webkit-column-gap: 20px;
+            -moz-column-gap: 20px;
+        }
+        .buttons {
+            margin-top: 60px;
+        }
+    }
+    .steps {
+        color: $white;
+        background: $blue;
+        padding: 50px 0;
+        h1 {
+            font-size: 31px;
+        }
+        .grid3 {
+            text-align: center;
+            font-size: 16px;
+            margin-top: 24px;
+        }
+        img {
+            margin-bottom: 10px;
+        }
+    }
+    .testimonials {
+        background-color: $light-grey;
+        padding: 71px 0;
+        p {
+            margin-top: 30px;
+        }
+        h1 {
+            text-align: center;
+            color: $blue;
+            font-size: 30px;
+        }
+        h2 {
+            text-align: center;
+            font-size: 18px;
+        }
+        .round-border {
+            border-radius: 50%;
+            border: 8px solid $blue;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+    .montage {
+        height: 500px;
+        background: url(/montage.jpg);
+        background-position: center center;
+    }
+    footer {
+        padding: 35px 0;
+        color: $light-grey;
+        background: $dark-grey;
+        .footer-logo {
+            width: 20%;
+            display: inline-block;
+            img {
+                width: 170px;
+                opacity: 0.5;
+                vertical-align: middle;
+                padding-left: 20px;
+            }
+        }
+        .footer-text {
+            display: inline-block;
+            width: 79%;
+            vertical-align: middle;
+            text-align: right;
+            opacity: 0.7;
+            padding-right: 20px;
+        }
+    }

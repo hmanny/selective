@@ -8,3 +8,26 @@ html {
 *:after {
     box-sizing: inherit;
 }
+body {
+    font-family: $text;
+    line-height: 1.6;
+}
+h1 {
+    font-family: $header;
+}
+button {
+    color: $blue;
+    background-color: $white;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 16px;
+    outline: none;
+    border: 2px solid $blue;
+    width: 150px;
+    &:hover {
+        cursor: pointer;
+        color: $white;
+        background-color: $blue;
+        border: none;
+    }
+}
