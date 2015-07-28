@@ -14,7 +14,10 @@
             <img src="/logo.png">
         </div>
         <div class="right-header">
-            <div class="info"><img src="/tele.png">0800 000000 <img src="/mail.png"> info@selectivecashadvance.co.uk</div>
+            <div class="info"><img src="/tele.png">
+                <span>0800 000 000</span><img src="/mail.png">
+                <span>info@selectivecashadvance.co.uk</span>
+            </div>
             <nav class="top-menu">
                 <ul class="menu" id="main">
                     <li id="menu0"><a title="Home" href="#">Home</a></li>
@@ -40,15 +43,13 @@
         <div class="main-text container">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel eleifend sapien. Etiam rhoncus diam nec ex ornare pretium. Pellentesque aliquet tortor consectetur est sollicitudin, sed vestibulum massa bibendum. Duis quis eleifend dui, nec ultricies libero. Integer nisl velit, venenatis vitae lectus eget, tincidunt bibendum dui. Aliquam vulputate in diam nec porta. Cras nibh libero, elementum id pellentesque suscipit, dignissim at sapien. Fusce vitae imperdiet libero. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed tincidunt felis vel orci porta, et facilisis tellus elementum. Suspendisse nec mauris urna. Aliquam id neque ac ipsum tempor fringilla vitae id nulla. Sed ultricies vitae dui ac feugiat. Vestibulum pretium rutrum lacus, sit amet pellentesque nulla dapibus eget. Ut a mauris quam. Suspendisse vehicula eros tortor, eu ullamcorper risus placerat in. In sollicitudin neque id elit vulputate, fringilla lacinia tortor pulvinar. Nam viverra libero sed luctus feugiat. Curabitur malesuada id turpis eget pharetra. Vivamus eu fringilla nisi.</p>
         </div>
-        <div class="container buttons">
-            <div class="grid4"></div>
-            <div class="grid2">
-                <button>Learn More</button>
-            </div>
-            <div class="grid2">
-                <button>Apply Today</button>
-            </div>
-            <div class="grid4"></div>
+        <div class="buttons">
+
+            <button>Learn More</button>
+
+
+            <button>Apply Today</button>
+
         </div>
     </div>
 
@@ -105,10 +106,35 @@
         </nav>
         <button class="menu_button"></button>
 
+        <div onclick="showInfo()" class="sideinfo"><img src="/tele.png">
+            <span>0800 000 000</span><img src="/mail.png">
+            <span>info@selectivecashadvance.co.uk</span>
+        </div>
+
         <div class="footer-text">Privacy | Terms | Web Design by The Smarter Web Company</div>
     </footer>
     <script src="/js/jquery-1.11.3.min.js"></script>
     <script src="/js/mobile-menu.js"></script>
 </body>
+
+<script>
+    function showInfo() {
+        $(".sideinfo span").toggle(150);
+    }
+
+    function hideInfo() {
+        $(".sideinfo span").hide(150);
+        setTimeout(function() {
+            $(".sideinfo span").removeAttr('style');
+        }, 150);
+
+
+    }
+
+    $(window).scroll(function() {
+        hideInfo();
+    });
+
+</script>
 
 </html>

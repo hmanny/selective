@@ -21,20 +21,42 @@
             }
         }
         .right-header {
-            @include breakpoint($lg) {
-                display: inline-block;
-            }
             display: none;
             vertical-align: middle;
-            width: 89%;
             color: $white;
+            text-align: right;
+            background: $trans-blue;
+            border-radius: 4px;
+            @include breakpoint($lg) {
+                display: inline-block;
+                position: static;
+                width: 89%;
+                background: none;
+            }
         }
         .info {
-            text-align: right;
             font-family: $header;
             font-size: 18px;
+            text-align: center;
+            @include breakpoint($lg) {
+                text-align: right;
+            }
+            span {
+                display: none;
+                @include breakpoint($lg) {
+                    display: inline;
+                    text-align: right;
+                }
+            }
             img {
-                margin: -3px 8px;
+                padding: 8px;
+                margin: 0 auto;
+                display: block;
+                @include breakpoint($lg) {
+                    margin: -3px 8px;
+                    display: inline;
+                    padding: 0;
+                }
             }
         }
     }
@@ -87,19 +109,15 @@
             colums: 2 300px;
             -webkit-columns: 2 300px;
             -moz-columns: 2 300px;
-            column-gap: 40px;
-            -webkit-column-gap: 40px;
-            -moz-column-gap: 40px;
-        }
-        .grid2 {
-            padding: 0;
+            column-gap: 26px;
+            -webkit-column-gap: 26px;
+            -moz-column-gap: 26px;
         }
         .buttons {
-            margin-top: 15px;
+            margin-top: 60px;
             text-align: center;
-            @include breakpoint($lg) {
-                text-align: left;
-                margin-top: 60px;
+            button {
+                margin: 0 13px 10px;
             }
         }
     }
@@ -118,6 +136,7 @@
             text-align: center;
             font-size: 15px;
             margin-top: 16px;
+            padding: 0;
             &:first-child {
                 margin-top: 0;
             }
@@ -167,6 +186,24 @@
         color: $light-grey;
         background: $dark-grey;
         font-size: 15px;
+        .sideinfo {
+            @include breakpoint($lg) {
+                display: none;
+            }
+            position: fixed;
+            top: 200px;
+            right: 0;
+            background: $trans-blue;
+            border-radius: 4px;
+            span {
+                display: none;
+            }
+            img {
+                display: block;
+                padding: 10px;
+                margin: 0 auto;
+            }
+        }
         .footer-logo {
             @include breakpoint($md) {
                 width: 20%;
