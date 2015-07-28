@@ -1,76 +1,129 @@
     header {
-        position: absolute;
+        position: fixed;
         background: $trans-blue;
-        padding: 25px;
+        padding: 25px 25px 25px 12px;
+        @include breakpoint($lg) {
+            position: absolute;
+            background: $trans-blue;
+            padding-left: 25px;
+        }
         width: 100%;
+        z-index: 10;
         .logo {
             display: inline-block;
             width: 10%;
             vertical-align: middle;
+            img {
+                width: 200px;
+                @include breakpoint($md) {
+                    width: auto;
+                }
+            }
         }
         .right-header {
-            display: inline-block;
+            @include breakpoint($lg) {
+                display: inline-block;
+            }
+            display: none;
             vertical-align: middle;
             width: 89%;
             color: $white;
         }
         .info {
             text-align: right;
+            font-family: $header;
+            font-size: 18px;
+            img {
+                margin: -3px 8px;
+            }
         }
     }
     .banner {
         background-image: url(/banner-img.jpg);
         background-size: cover;
-        padding: 340px 0 160px;
+        background-position: 83%;
+        padding: 220px 0 80px;
+        @include breakpoint($lg) {
+            padding: 300px 0 160px
+        }
         .box {
-            font-size: 54px;
+            font-size: 36px;
+            @include breakpoint($md) {
+                font-size: 42px;
+            }
+            @include breakpoint($lg) {
+                font-size: 55px;
+                padding: 35px 50px;
+            }
             text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
             color: white;
             text-align: center;
-            padding: 45px 65px;
+            padding: 35px 20px;
             margin: 0 auto;
             background: $trans-blue;
             max-width: 80%;
             width: 700px;
             border-radius: 8px;
-            line-height: 1.4;
+            line-height: 1.2;
+            button {
+                border: none;
+            }
         }
     }
     .text-area {
         padding: 70px 0 50px;
+        text-align: center;
+        @include breakpoint($sm) {
+            text-align: left;
+        }
         h1 {
             color: $blue;
             text-align: center;
             margin-bottom: 50px;
-            font-size: 32px;
+            font-size: 34px;
         }
         .main-text {
             color: $text-grey;
-            colums: 2 200px;
-            -webkit-columns: 2 200px;
-            -moz-columns: 2 200px;
-            column-gap: 16px;
-            -webkit-column-gap: 20px;
-            -moz-column-gap: 20px;
+            colums: 2 300px;
+            -webkit-columns: 2 300px;
+            -moz-columns: 2 300px;
+            column-gap: 40px;
+            -webkit-column-gap: 40px;
+            -moz-column-gap: 40px;
+        }
+        .grid2 {
+            padding: 0;
         }
         .buttons {
-            margin-top: 60px;
+            margin-top: 15px;
+            text-align: center;
+            @include breakpoint($lg) {
+                text-align: left;
+                margin-top: 60px;
+            }
         }
     }
     .steps {
         color: $white;
         background: $blue;
-        padding: 50px 0;
+        padding: 40px 0;
         h1 {
             font-size: 31px;
+            text-align: center;
+            @include breakpoint($lg) {
+                text-align: left;
+            }
         }
         .grid3 {
             text-align: center;
-            font-size: 16px;
-            margin-top: 24px;
+            font-size: 15px;
+            margin-top: 16px;
+            &:first-child {
+                margin-top: 0;
+            }
         }
         img {
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
     }
     .testimonials {
@@ -78,6 +131,12 @@
         padding: 71px 0;
         p {
             margin-top: 30px;
+            text-align: center;
+            color: $text-grey-dark;
+            @include breakpoint($lg) {
+                text-align: left;
+                font-size: 22px;
+            }
         }
         h1 {
             text-align: center;
@@ -87,6 +146,8 @@
         h2 {
             text-align: center;
             font-size: 18px;
+            font-family: $semi-bold;
+            color: $text-grey;
         }
         .round-border {
             border-radius: 50%;
@@ -101,25 +162,38 @@
         background-position: center center;
     }
     footer {
+        text-align: center;
         padding: 35px 0;
         color: $light-grey;
         background: $dark-grey;
+        font-size: 15px;
         .footer-logo {
-            width: 20%;
-            display: inline-block;
+            @include breakpoint($md) {
+                width: 20%;
+                display: inline-block;
+                text-align: left;
+            }
             img {
                 width: 170px;
                 opacity: 0.5;
                 vertical-align: middle;
-                padding-left: 20px;
+                padding-bottom: 20px;
+                @include breakpoint($md) {
+                    padding-left: 20px;
+                    padding-bottom: 0;
+                }
             }
         }
         .footer-text {
-            display: inline-block;
-            width: 79%;
-            vertical-align: middle;
-            text-align: right;
-            opacity: 0.7;
-            padding-right: 20px;
+            @include breakpoint($md) {
+                display: inline-block;
+                width: 79%;
+                vertical-align: middle;
+                text-align: right;
+            }
+            opacity: 0.4;
+            @include breakpoint($md) {
+                padding-right: 20px;
+            }
         }
     }

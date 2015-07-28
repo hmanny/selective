@@ -1,5 +1,5 @@
 $columns: 12;
-$column-width: 65px;
+$column-width: 70px;
 $gutter: 20px;
 $padding: $gutter / 2;
 $responsive: true;
@@ -37,6 +37,7 @@ $width: ($column-width * $columns) + ($gutter * ($columns - 1));
             }
             width: 100%;
             margin-bottom: 50px;
+            padding: 0 $gutter-percentage;
         }
     }
     @else {
