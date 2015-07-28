@@ -197,11 +197,21 @@
             border-radius: 4px;
             span {
                 display: none;
+                font-family: $bold;
+                margin: 0 5px;
             }
             img {
                 display: block;
                 padding: 10px;
                 margin: 0 auto;
+            }
+            .closer:after {
+                font-family: "icomoon";
+                content: "\e601";
+                position: absolute;
+                top: 0;
+                left: 2px;
+                font-size: 22px;
             }
         }
         .footer-logo {

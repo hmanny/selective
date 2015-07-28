@@ -125,17 +125,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .container {
   max-width: 1012px;
   margin: 0px auto;
-  padding: 0 10px 0 10px;
+  padding: 0 60px 0 60px;
   display: block;
 }
+@media (min-width: 1025px) {
+  /* line 8, ../sass/_grid.scss */
+  .container {
+    padding: 0 10px 0 10px;
+  }
+}
 
-/* line 30, ../sass/_grid.scss */
+/* line 33, ../sass/_grid.scss */
 .grid1 {
   width: 100%;
   margin-bottom: 50px;
 }
 @media (min-width: 960px) {
-  /* line 30, ../sass/_grid.scss */
+  /* line 33, ../sass/_grid.scss */
   .grid1 {
     width: 6.26087%;
     display: inline-block;
@@ -145,13 +151,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 
-/* line 30, ../sass/_grid.scss */
+/* line 33, ../sass/_grid.scss */
 .grid2 {
   width: 100%;
   margin-bottom: 50px;
 }
 @media (min-width: 960px) {
-  /* line 30, ../sass/_grid.scss */
+  /* line 33, ../sass/_grid.scss */
   .grid2 {
     width: 14.41897%;
     display: inline-block;
@@ -161,13 +167,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 
-/* line 30, ../sass/_grid.scss */
+/* line 33, ../sass/_grid.scss */
 .grid3 {
   width: 100%;
   margin-bottom: 50px;
 }
 @media (min-width: 960px) {
-  /* line 30, ../sass/_grid.scss */
+  /* line 33, ../sass/_grid.scss */
   .grid3 {
     width: 22.57708%;
     display: inline-block;
@@ -177,13 +183,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 
-/* line 30, ../sass/_grid.scss */
+/* line 33, ../sass/_grid.scss */
 .grid4 {
   width: 100%;
   margin-bottom: 50px;
 }
 @media (min-width: 960px) {
-  /* line 30, ../sass/_grid.scss */
+  /* line 33, ../sass/_grid.scss */
   .grid4 {
     width: 30.73518%;
     display: inline-block;
@@ -193,13 +199,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 
-/* line 30, ../sass/_grid.scss */
+/* line 33, ../sass/_grid.scss */
 .grid5 {
   width: 100%;
   margin-bottom: 50px;
 }
 @media (min-width: 960px) {
-  /* line 30, ../sass/_grid.scss */
+  /* line 33, ../sass/_grid.scss */
   .grid5 {
     width: 38.89328%;
     display: inline-block;
@@ -209,13 +215,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 
-/* line 30, ../sass/_grid.scss */
+/* line 33, ../sass/_grid.scss */
 .grid6 {
   width: 100%;
   margin-bottom: 50px;
 }
 @media (min-width: 960px) {
-  /* line 30, ../sass/_grid.scss */
+  /* line 33, ../sass/_grid.scss */
   .grid6 {
     width: 47.05138%;
     display: inline-block;
@@ -225,13 +231,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 
-/* line 30, ../sass/_grid.scss */
+/* line 33, ../sass/_grid.scss */
 .grid7 {
   width: 100%;
   margin-bottom: 50px;
 }
 @media (min-width: 960px) {
-  /* line 30, ../sass/_grid.scss */
+  /* line 33, ../sass/_grid.scss */
   .grid7 {
     width: 55.20949%;
     display: inline-block;
@@ -241,13 +247,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 
-/* line 30, ../sass/_grid.scss */
+/* line 33, ../sass/_grid.scss */
 .grid8 {
   width: 100%;
   margin-bottom: 50px;
 }
 @media (min-width: 960px) {
-  /* line 30, ../sass/_grid.scss */
+  /* line 33, ../sass/_grid.scss */
   .grid8 {
     width: 63.36759%;
     display: inline-block;
@@ -257,13 +263,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 
-/* line 30, ../sass/_grid.scss */
+/* line 33, ../sass/_grid.scss */
 .grid9 {
   width: 100%;
   margin-bottom: 50px;
 }
 @media (min-width: 960px) {
-  /* line 30, ../sass/_grid.scss */
+  /* line 33, ../sass/_grid.scss */
   .grid9 {
     width: 71.52569%;
     display: inline-block;
@@ -273,13 +279,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 
-/* line 30, ../sass/_grid.scss */
+/* line 33, ../sass/_grid.scss */
 .grid10 {
   width: 100%;
   margin-bottom: 50px;
 }
 @media (min-width: 960px) {
-  /* line 30, ../sass/_grid.scss */
+  /* line 33, ../sass/_grid.scss */
   .grid10 {
     width: 79.68379%;
     display: inline-block;
@@ -289,13 +295,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 
-/* line 30, ../sass/_grid.scss */
+/* line 33, ../sass/_grid.scss */
 .grid11 {
   width: 100%;
   margin-bottom: 50px;
 }
 @media (min-width: 960px) {
-  /* line 30, ../sass/_grid.scss */
+  /* line 33, ../sass/_grid.scss */
   .grid11 {
     width: 87.8419%;
     display: inline-block;
@@ -305,7 +311,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 
-/* line 50, ../sass/_grid.scss */
+/* line 53, ../sass/_grid.scss */
 .grid:first-child {
   margin-left: 0;
 }
@@ -764,22 +770,33 @@ footer .sideinfo {
 /* line 198, ../sass/_sections.scss */
 footer .sideinfo span {
   display: none;
+  font-family: "Open Sans Bold", sans-serif;
+  margin: 0 5px;
 }
-/* line 201, ../sass/_sections.scss */
+/* line 203, ../sass/_sections.scss */
 footer .sideinfo img {
   display: block;
   padding: 10px;
   margin: 0 auto;
 }
+/* line 208, ../sass/_sections.scss */
+footer .sideinfo .closer:after {
+  font-family: "icomoon";
+  content: "\e601";
+  position: absolute;
+  top: 0;
+  left: 2px;
+  font-size: 22px;
+}
 @media (min-width: 960px) {
-  /* line 207, ../sass/_sections.scss */
+  /* line 217, ../sass/_sections.scss */
   footer .footer-logo {
     width: 20%;
     display: inline-block;
     text-align: left;
   }
 }
-/* line 213, ../sass/_sections.scss */
+/* line 223, ../sass/_sections.scss */
 footer .footer-logo img {
   width: 170px;
   opacity: 0.5;
@@ -787,18 +804,18 @@ footer .footer-logo img {
   padding-bottom: 20px;
 }
 @media (min-width: 960px) {
-  /* line 213, ../sass/_sections.scss */
+  /* line 223, ../sass/_sections.scss */
   footer .footer-logo img {
     padding-left: 20px;
     padding-bottom: 0;
   }
 }
-/* line 224, ../sass/_sections.scss */
+/* line 234, ../sass/_sections.scss */
 footer .footer-text {
   opacity: 0.4;
 }
 @media (min-width: 960px) {
-  /* line 224, ../sass/_sections.scss */
+  /* line 234, ../sass/_sections.scss */
   footer .footer-text {
     display: inline-block;
     width: 79%;
@@ -807,7 +824,7 @@ footer .footer-text {
   }
 }
 @media (min-width: 960px) {
-  /* line 224, ../sass/_sections.scss */
+  /* line 234, ../sass/_sections.scss */
   footer .footer-text {
     padding-right: 20px;
   }

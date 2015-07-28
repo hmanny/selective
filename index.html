@@ -109,6 +109,7 @@
         <div onclick="showInfo()" class="sideinfo"><img src="/tele.png">
             <span>0800 000 000</span><img src="/mail.png">
             <span>info@selectivecashadvance.co.uk</span>
+            <span onclick="hideInfo()" class="closer"></span>
         </div>
 
         <div class="footer-text">Privacy | Terms | Web Design by The Smarter Web Company</div>
@@ -119,7 +120,7 @@
 
 <script>
     function showInfo() {
-        $(".sideinfo span").toggle(150);
+        $(".sideinfo span").show(150);
     }
 
     function hideInfo() {
