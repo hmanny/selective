@@ -1,0 +1,69 @@
+.graph-strip {
+    h1 {
+        margin-bottom: 50px;
+        font-size: 34px;
+    }
+    @extend .testimonials;
+    .grid4 {
+        vertical-align: middle;
+        p {
+            text-align: center;
+        }
+    }
+    .graph {
+        width: 100%;
+        height: auto;
+    }
+}
+.steps {
+    padding: 71px 0;
+    .container .grid3:first-child {
+        margin-top: 16px;
+    }
+    p {
+        font-size: 18px;
+        font-family: $bold;
+    }
+    h1 {
+        text-align: center;
+        font-size: 34px;
+        line-height: 1.2;
+        margin-bottom: 50px;
+    }
+}
+.business-strip {
+    @extend .steps;
+    h2 {
+        @extend h1;
+        font-size: 21px;
+        margin-bottom: 5px;
+    }
+    .grid3 {
+        vertical-align: middle;
+    }
+    .round-border {
+        border-radius: 50%;
+        border: 8px solid $white;
+        margin: 0 auto;
+        display: block;
+        width: 90%;
+        max-width: 220px;
+    }
+    p {
+        font-family: $text;
+        font-size: 16px;
+    }
+}
+.tele {
+    color: #70b6b4;
+    font-family: $bold;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+.text-area .buttons {
+    margin-top: 35px;
+    @include breakpoint($lg) {
+        margin-top: 60px;
+    }
+}

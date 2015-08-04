@@ -4,7 +4,8 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* line 5, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1,
+.business-strip h2, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -124,8 +125,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 8, ../sass/_grid.scss */
 .container {
   max-width: 1012px;
+  padding: 0 10px;
   margin: 0px auto;
-  padding: 0 60px 0 60px;
   display: block;
 }
 @media (min-width: 1025px) {
@@ -336,19 +337,19 @@ body {
 }
 
 /* line 15, ../sass/_general.scss */
-h1 {
+h1, .business-strip h2 {
   font-family: "Arvo Bold", sans-serif;
 }
 
 /* line 18, ../sass/_general.scss */
 button {
-  color: #70b6b4;
+  color: #58acac;
   background-color: #fff;
   border-radius: 11px;
   padding: 11px 16px;
   font-size: 16px;
   outline: none;
-  border: 2px solid #70b6b4;
+  border: 2px solid #58acac;
   width: 150px;
   font-family: "Open Sans Bold", sans-serif;
   -webkit-transition: all 0.2s linear;
@@ -360,7 +361,7 @@ button {
 button:hover {
   cursor: pointer;
   color: #fff;
-  background-color: #70b6b4;
+  background-color: #58acac;
   border-color: transparent;
   box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.5);
   -webkit-transform: scale(1.02);
@@ -498,7 +499,7 @@ button:hover {
 /* line 1, ../sass/_sections.scss */
 header {
   position: fixed;
-  background: rgba(112, 182, 180, 0.8);
+  background: rgba(50, 153, 153, 0.8);
   padding: 25px 25px 25px 12px;
   width: 100%;
   z-index: 10;
@@ -507,7 +508,7 @@ header {
   /* line 1, ../sass/_sections.scss */
   header {
     position: absolute;
-    background: rgba(112, 182, 180, 0.8);
+    background: rgba(50, 153, 153, 0.8);
     padding-left: 25px;
   }
 }
@@ -533,7 +534,7 @@ header .right-header {
   vertical-align: middle;
   color: #fff;
   text-align: right;
-  background: rgba(112, 182, 180, 0.8);
+  background: rgba(50, 153, 153, 0.8);
   border-radius: 4px;
 }
 @media (min-width: 1025px) {
@@ -604,7 +605,7 @@ header .info img {
   text-align: center;
   padding: 35px 20px;
   margin: 0 auto;
-  background: rgba(112, 182, 180, 0.8);
+  background: rgba(50, 153, 153, 0.8);
   max-width: 80%;
   width: 700px;
   border-radius: 8px;
@@ -640,8 +641,8 @@ header .info img {
   }
 }
 /* line 101, ../sass/_sections.scss */
-.text-area h1 {
-  color: #70b6b4;
+.text-area h1, .text-area .business-strip h2, .business-strip .text-area h2 {
+  color: #58acac;
   text-align: center;
   margin-bottom: 50px;
   font-size: 34px;
@@ -667,73 +668,73 @@ header .info img {
 }
 
 /* line 124, ../sass/_sections.scss */
-.steps {
+.steps, .business-strip {
   color: #fff;
-  background: #70b6b4;
+  background: #58acac;
   padding: 40px 0;
 }
 /* line 128, ../sass/_sections.scss */
-.steps h1 {
+.steps h1, .business-strip h1, .business-strip h2 {
   font-size: 31px;
   text-align: center;
 }
 @media (min-width: 1025px) {
   /* line 128, ../sass/_sections.scss */
-  .steps h1 {
+  .steps h1, .business-strip h1, .business-strip h2 {
     text-align: left;
   }
 }
 /* line 135, ../sass/_sections.scss */
-.steps .grid3 {
+.steps .grid3, .business-strip .grid3 {
   text-align: center;
   font-size: 15px;
   margin-top: 16px;
   padding: 0;
 }
 /* line 140, ../sass/_sections.scss */
-.steps .grid3:first-child {
+.steps .grid3:first-child, .business-strip .grid3:first-child {
   margin-top: 0;
 }
 /* line 144, ../sass/_sections.scss */
-.steps img {
+.steps img, .business-strip img {
   margin-bottom: 12px;
 }
 
 /* line 148, ../sass/_sections.scss */
-.testimonials {
+.testimonials, .graph-strip {
   background-color: #f1f1f1;
   padding: 71px 0;
 }
 /* line 151, ../sass/_sections.scss */
-.testimonials p {
+.testimonials p, .graph-strip p {
   margin-top: 30px;
   text-align: center;
   color: #626462;
 }
 @media (min-width: 1025px) {
   /* line 151, ../sass/_sections.scss */
-  .testimonials p {
+  .testimonials p, .graph-strip p {
     text-align: left;
     font-size: 22px;
   }
 }
 /* line 160, ../sass/_sections.scss */
-.testimonials h1 {
+.testimonials h1, .graph-strip h1, .testimonials .business-strip h2, .business-strip .testimonials h2, .graph-strip .business-strip h2, .business-strip .graph-strip h2 {
   text-align: center;
-  color: #70b6b4;
+  color: #58acac;
   font-size: 30px;
 }
 /* line 165, ../sass/_sections.scss */
-.testimonials h2 {
+.testimonials h2, .graph-strip h2 {
   text-align: center;
   font-size: 18px;
   font-family: "Open Sans Semibold", sans-serif;
   color: #b3b3b3;
 }
 /* line 171, ../sass/_sections.scss */
-.testimonials .round-border {
+.testimonials .round-border, .graph-strip .round-border {
   border-radius: 50%;
-  border: 8px solid #70b6b4;
+  border: 8px solid #58acac;
   margin: 0 auto;
   display: block;
 }
@@ -758,7 +759,7 @@ footer .sideinfo {
   position: fixed;
   top: 200px;
   right: 0;
-  background: rgba(112, 182, 180, 0.8);
+  background: rgba(50, 153, 153, 0.8);
   border-radius: 4px;
 }
 @media (min-width: 1025px) {
@@ -827,5 +828,89 @@ footer .footer-text {
   /* line 234, ../sass/_sections.scss */
   footer .footer-text {
     padding-right: 20px;
+  }
+}
+
+/* line 2, ../sass/_updates.scss */
+.graph-strip h1, .graph-strip .business-strip h2, .business-strip .graph-strip h2 {
+  margin-bottom: 50px;
+  font-size: 34px;
+}
+/* line 7, ../sass/_updates.scss */
+.graph-strip .grid4 {
+  vertical-align: middle;
+}
+/* line 9, ../sass/_updates.scss */
+.graph-strip .grid4 p {
+  text-align: center;
+}
+/* line 13, ../sass/_updates.scss */
+.graph-strip .graph {
+  width: 100%;
+  height: auto;
+}
+
+/* line 18, ../sass/_updates.scss */
+.steps, .business-strip {
+  padding: 71px 0;
+}
+/* line 20, ../sass/_updates.scss */
+.steps .container .grid3:first-child, .business-strip .container .grid3:first-child {
+  margin-top: 16px;
+}
+/* line 23, ../sass/_updates.scss */
+.steps p, .business-strip p {
+  font-size: 18px;
+  font-family: "Open Sans Bold", sans-serif;
+}
+/* line 27, ../sass/_updates.scss */
+.steps h1, .business-strip h1, .business-strip h2 {
+  text-align: center;
+  font-size: 34px;
+  line-height: 1.2;
+  margin-bottom: 50px;
+}
+
+/* line 36, ../sass/_updates.scss */
+.business-strip h2 {
+  font-size: 21px;
+  margin-bottom: 5px;
+}
+/* line 41, ../sass/_updates.scss */
+.business-strip .grid3 {
+  vertical-align: middle;
+}
+/* line 44, ../sass/_updates.scss */
+.business-strip .round-border {
+  border-radius: 50%;
+  border: 8px solid #fff;
+  margin: 0 auto;
+  display: block;
+  width: 90%;
+  max-width: 220px;
+}
+/* line 52, ../sass/_updates.scss */
+.business-strip p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+/* line 57, ../sass/_updates.scss */
+.tele {
+  color: #70b6b4;
+  font-family: "Open Sans Bold", sans-serif;
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+/* line 64, ../sass/_updates.scss */
+.text-area .buttons {
+  margin-top: 35px;
+}
+@media (min-width: 1025px) {
+  /* line 64, ../sass/_updates.scss */
+  .text-area .buttons {
+    margin-top: 60px;
   }
 }
